@@ -33,7 +33,7 @@
 //   console.log('Число не входить в діапазон від 10 до 20') 
 // }
 
-const email = "llarqeh@gmail.com";
+const email = "goncharov.den0410@gmail.com";
 const userName = "Serhii";
 const pass = "1233123";
 if (email.includes("@") && email.includes(".", email.indexOf("@")) && userName.length > 3 && pass.length > 6) {

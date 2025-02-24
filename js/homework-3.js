@@ -7,7 +7,7 @@ console.log(5 + 5 + `5`);
 // який перевіряє чи містить змінна email символ @ (за доп метода includes()  або indexOf()) 
 // та рахує загальну кількість символів. Результат виведіть в консоль.
 
-const userEmail = "shurikon2008@gmail.com"
+const userEmail = "goncharov.den0410@gmail.com"
 const verificationOfUserEmail = userEmail.includes("@");
 console.log(verificationOfUserEmail, userEmail.length);
 
@@ -30,7 +30,7 @@ console.log(fullName2);
 // За допомогою шаблонного рядка виведіть на екран через 
 // alert повідомлення на прикладі цього: «Дякуємо, Олександро! До сплати 300 гривень»
 
-const userName = "Олександро";
+const userName = "Денис";
 const payment = 300;
 const phrase1 = `Дякуємо, ${userName}! До сплати ${payment} гривень`;
 
@@ -41,7 +41,7 @@ alert(phrase1)
 //  Використовуючи метод .indexOf(), знайти і вивести в консоль 
 // позицію, на якій знаходиться пробіл між ім'ям та прізвищем.
 
-const myName = "Oleksandr Konovalenko";
+const myName = "Denis goncharov";
 console.log(myName.indexOf(" "));
 
 

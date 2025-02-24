@@ -1,6 +1,6 @@
 const myAge = 15;
 console.log(myAge)
-const myName = "Гліб";
+const myName = "денис";
 console.log(myName)
 const isStudent = false;
 console.log("Я студент:", isStudent)
