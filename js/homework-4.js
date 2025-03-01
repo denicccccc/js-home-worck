@@ -22,7 +22,7 @@
 //   console.log('Текст містить слово JavaScript')
 // }
 // else {
-//   console.log('Текст не містить слово JavaScript')
+//   console.log('Текст не містить слово JavaScript'),2,,
 // };
 
 // const number3 = 15;
