@@ -1,46 +1,56 @@
-// const result = 5+5+'5';
-// console.log(result)
-// console.log(typeof result)
+// 1 join + for 
 
-// const email = 'ahmed.alie0643@gmail.com';
-// console.log(email.includes('@'));
-// const count = email.length;
-// console.log(count)
+let friends = ['Mango', 'Poly', 'Kiwi', 'Ajax']
+let methodJoin = "";
+const koma = ","
 
-// const text1 = 'My';
-// const text2 = 'name';
-// const text3 = 'is';
-// const instruction = 'Ведіть своє ім*я';
-// const userName = prompt(instruction)
-// const fullName = `${text1} ${text2} ${text3} ${userName}`;
-// console.log(fullName)
+// for (let i = 0; i < friends.length; i+=1) {
+//   newArr += friends[i];
+for(let i = 0; i < friends.length; i+=1) {
+  methodJoin += friends[i]
+  if (i < friends.length - 1) {
+    methodJoin += koma
+  }
+}
 
-// const workerName = prompt(instruction);
-// const payment = 300;
-// alert(`Дякуємо, ${workerName}! До сплати ${payment} гривень`);
+console.log(methodJoin);
 
-// const MyFullName = 'Coco Jambo';
-// console.log(MyFullName.indexOf(' '))
+// 2
 
-// const blacklistedWord1 = 'спам';
-// const blacklistedWord2 = 'розпродаж';
-// const string1 = 'Привіт, я Ілон Маск, це не спам, пропоную тобі мільйон!';
-// const lowercaseSumbol1 = string1.toLowerCase();
-// console.log(lowercaseSumbol1)
-// const scamOrNot = lowercaseSumbol1.includes('розпродаж') || lowercaseSumbol1.includes('спам');
-// console.log(scamOrNot)
-// alert(`string1 має black listed word = ${scamOrNot}`)
+const cards = [
+  'Card-1',
+  'Card-2',
+  'Card-3',
+  'Card-4',
+  'Card-5'
+]
+const cardToRemove = 'Card-3'
+const indexOf = cards.splice(cards.indexOf(cardToRemove) , 1)
+console.log(cards);
 
-// const string2 = 'Найбільший РОЗПРОДАЖ цього тижня, не пропустіть!';
-// const lowercaseSumbol2 = string2.toLowerCase();
-// console.log(lowercaseSumbol2)
-// const scamOrNot2 = lowercaseSumbol2.includes('розпродаж') || lowercaseSumbol2.includes('спам');
-// console.log(scamOrNot2)
-// alert(`string2 має black listed word = ${scamOrNot2}`)
+const cardToInsert = 'Card-6'
+const indexOf2 = cards.splice(cards.length, 0 , cardToInsert)
+console.log(cards);
 
-// const string3 = 'Рекламна кампанія #jsIsAwesome';
-// const lowercaseSumbol3 = string3.toLowerCase();
-// console.log(lowercaseSumbol3)
-// const scamOrNot3 = lowercaseSumbol3.includes('розпродаж') || lowercaseSumbol3.includes('спам');
-// console.log(scamOrNot3)
-// alert(`string3 має black listed word = ${scamOrNot3}`)
+const cardToUpdate = 'Card-4'
+const indexOf3 = cards.splice(cards.indexOf(cardToUpdate), 0)
+console.log(cards);
+
+// Перетворити масив:
+const arrayOriginal = ["true", "Kiwi", "Monkong", "Singu", "Mango", "Ajax", "Poly", "false"];
+
+// на масив arrayNew:
+//todo: ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"];
+
+// не змінюючи значення елементів та використовуючи методи:
+// push(), pop(), unshift(), shift(),
+// slice(), splice(), concat() за власним бажанням!
+
+arrayOriginal.pop()
+arrayOriginal.shift()
+let newArr = arrayOriginal.slice(3, 6)
+let secondArr = arrayOriginal.slice(0, 3)
+console.log(newArr);
+let arrayNew = newArr.concat(secondArr);
+
+console.log(arrayNew);
